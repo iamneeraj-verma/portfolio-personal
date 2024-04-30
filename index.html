@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Neeraj Verma</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#careerplan">Career Plan</a></li>
+          <li><a href="#contact">Contact</a></li> 
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Neeraj Verma</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#careerplan" onclick="toggleMenu()">Career Plan</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Neeraj Verma profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Neeraj Verma</h1>
+        <p class="section__text__p2">A Business Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/neeraj.pdf')"
+          >
+            Career Plan
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/iamneeraj-verma/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/iamneeraj-verma'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/guitar.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Hobbies</h3>
+              <p>Playing Guitar</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor of Business</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm a first-year Business Analytics student at Griffith University, passionate about leveraging data for organizational growth. From refining data analysis skills to crafting compelling essays, I'm driven by a thirst for learning. Outside of academics, I enjoy making music and delving into research. Currently, I'm focused on mastering business analysis fundamentals and building my professional portfolio website. Eager to connect, collaborate, and dive deeper into the world of analytics. Let's connect and grow together!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#careerplan'"
+      />
+    </section>
+    <section id="careerplan">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Career Plan</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Be self-aware</h2>
+            <div class="article-container">
+              <article>
+                <p>To truly understand my interests, values, skills, personality, and strengths, I will engage in a comprehensive self-assessment process. I will complete personality assessments like the Myers-Briggs Type Indicator (MBTI) and StrengthsFinder to identify my natural tendencies, communication styles, and unique abilities. Additionally, I will create a detailed inventory of my past experiences, achievements, and roles, analyzing the aspects I found most fulfilling and the skills I leveraged effectively. This retrospective exercise will pinpoint the underlying interests and values that drive my motivation and satisfaction. Furthermore, I will seek feedback from peers, mentors, professors, and personality assessment tools or career coaching services. Their external perspectives can provide valuable insights into my strengths, areas for growth, and potential career fit. This multi-faceted approach will ensure I have a well-rounded understanding of my authentic self, enabling me to make informed career choices aligned with my true passions and capabilities.</p>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Explore your options</h2>
+            <div class="article-container">
+              <article>
+                <p>As a business analyst student, I will dedicate significant time and effort to researching various industry sectors and organizations that employ business analysts. This will involve thoroughly exploring company websites, industry publications, attending conferences and networking events, and connecting with professionals through informational interviews or job shadowing. By immersing myself in these resources, I can gain a deeper understanding of the diverse roles, responsibilities, and specializations within the business analyst realm. I will also consult career resources like the Bureau of Labor Statistics' Occupational Outlook Handbook, industry associations like the International Institute of Business Analysis (IIBA), and online job boards. This research will help me identify specific areas of business analysis that align with my interests and strengths, such as process improvement, data analysis, or requirements gathering. Additionally, I will explore relevant certifications like the IIBA's Certified Business Analysis Professional (CBAP) to enhance my credibility and marketability.</p>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Gain experience and insight</h2>
+            <div class="article-container">
+              <article>
+                <p>To develop practical experience and deepen my understanding of the business analyst role, I plan to actively seek internship opportunities during my academic journey. These hands-on experiences will allow me to apply classroom knowledge to real-world scenarios, collaborate with industry professionals, and gain exposure to the day-to-day responsibilities and challenges faced by business analysts.
+
+                  In addition to internships, I will explore on-campus opportunities like case competitions, consulting projects, or capstone courses that simulate business analysis tasks and challenges. These experiences will help me hone my analytical, problem-solving, and critical thinking skills, as well as improve my ability to communicate complex information effectively.
+                  
+                  Furthermore, I will attend workshops, webinars, and conferences hosted by professional associations like the IIBA or local business analyst groups. These events will provide opportunities to stay updated on industry trends, best practices, and emerging tools or methodologies. Networking with experienced business analysts can also provide invaluable mentorship, career guidance, and insights into the profession's nuances.</p>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Evidence your skills (knowledge, skills and attributes)</h2>
+            <div class="article-container">
+              <article>
+                <p>To identify and document the specific skills required for a successful business analyst career, I will conduct a thorough analysis of job descriptions from my target companies and organizations. This will provide insights into the technical skills (e.g., data analysis, process modeling, requirements gathering), soft skills (e.g., communication, problem-solving, critical thinking), and industry knowledge needed to excel in the role.
+
+                  Based on this analysis, I will create a comprehensive skill matrix, mapping my current proficiencies against the identified requirements. This matrix will highlight areas where I excel and pinpoint gaps that require further development through relevant coursework, online training, or certification programs.
+                  
+                  Additionally, I will maintain a professional portfolio showcasing my academic projects, internship experiences, and relevant certifications. This portfolio will serve as a tangible demonstration of my skills and accomplishments, making me a more compelling candidate. Furthermore, I will actively seek opportunities to contribute to open-source projects, participate in coding challenges, or attend hackathons related to data analysis or process improvement, enhancing my technical abilities and providing concrete examples of my work.</p>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Develop networks</h2>
+            <div class="article-container">
+              <article>
+                <p>To build a strong professional network, I will actively participate in campus organizations and clubs related to business analysis, consulting, or project management. These groups provide opportunities to connect with like-minded individuals, attend guest speaker events, and participate in networking sessions with industry professionals. I will also leverage online platforms like LinkedIn to connect with alumni, professionals in my desired field, and join relevant groups or discussions.
+
+                  Additionally, I will attend local meetups, conferences, or professional association events hosted by organizations like the IIBA or the Project Management Institute (PMI). These events offer excellent networking opportunities, allowing me to interact with experienced business analysts, learn from their experiences, and potentially secure informational interviews or job shadowing opportunities.
+                  
+                  Furthermore, I will proactively reach out to professionals in my target companies or organizations, expressing my interest in their work and seeking informational interviews or job shadowing opportunities. Building these connections early can lead to potential mentorship relationships or even future job opportunities within the organization.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+  
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:neerajverma20033@gmail.com">Neerajverma@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/iamneeraj-verma/" target="_blank" >LinkedIn </a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#careerplan">Career Plan</a></li>
+          <li><a href="#contact">Contact</a></li> 
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Neeraj Verma. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
